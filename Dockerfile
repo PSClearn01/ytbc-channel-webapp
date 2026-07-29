@@ -41,4 +41,5 @@ EXPOSE 3000
 ENV PORT=3000
 
 # Start the application, running database push first
-CMD ["sh", "-c", "npx drizzle-kit push && node build"]
+CMD ["sh", "-c", "npx drizzle-kit push --force && node build"]
+
